@@ -1,8 +1,5 @@
-from typing import List
-
-
-def average_score(scores: List[int]) -> float:
-    return sum(scores) / len(scores)
+def average_score(scores: list[int]) -> float:
+    return float( sum(scores) / len(scores) )
 
 
 def pass_fail(score: int) -> str:
@@ -12,7 +9,7 @@ def pass_fail(score: int) -> str:
         return "fail"
 
 
-def analyze_scores(scores: List[int]) -> None:
+def analyze_scores(scores: list[int]) -> None:
     for score in scores:
         result = pass_fail(score)
         print(f"Score {score} → {result}")
